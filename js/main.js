@@ -37,7 +37,9 @@ define([], function(){
    },
 
    shim: {
-     
+     bootstrap: {
+       deps: ['jquery']
+     }
    }
  })
 
