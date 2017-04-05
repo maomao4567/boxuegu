@@ -26,7 +26,7 @@ define([], function(){
     bootstrap: 'lib/bootstrap/js/bootstrap',
     datepicker: 'lib/bootstrap-datepicker/js/bootstrap-datepicker',
     ckeditor: 'lib/ckeditor/ckeditor',
-    ckeditorLand: 'lib/ckeditor/lang/Zh-cn',
+    ckeditorLand: 'lib/ckeditor/lang/zh-cn',
     echarts: 'lib/echarts/echarts.min',
     jquery: 'lib/jquery/jquery.min',
     jqueryCookie: 'lib/jquery-cookie/jquery.cookie',
@@ -37,6 +37,8 @@ define([], function(){
    },
 
    shim: {
+
+     // bootstrap是非define定义的模块，又依赖与jquery，所以需要配置
      bootstrap: {
        deps: ['jquery']
      }
